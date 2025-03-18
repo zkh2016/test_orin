@@ -1,5 +1,7 @@
 from transformers import AutoTokenizer
 import numpy as np
+import argparse
+
 
 path = "/DATA/disk1/zhangkaihuo/minicpmv-0_9b-guiagent-0305-ckpt13500/"
 
