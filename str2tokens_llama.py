@@ -1,7 +1,7 @@
 from transformers import LlamaTokenizerFast
 import argparse
 
-model_path = "./models/minicpmv-0_9b-guiagent-0305-ckpt13500/"
+model_path = "./models/minicpmv-0_9b-guiagent-0305-ckpt13500-llama-format/"
 
 
 def convert(prompt):
@@ -20,7 +20,7 @@ def convert(prompt):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='')
-    parser.add_argument('prompt', help='prompt')
+    parser.add_argument('prompt', help='prompt', default="描述图片内容")
     args = parser.parse_args()
 
     convert(args.prompt)
